@@ -1,0 +1,119 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* 主色调 */
+  --bg-primary: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%);
+  --bg-secondary: rgba(255, 255, 255, 0.03);
+  --bg-card: rgba(255, 255, 255, 0.05);
+
+  /* 强调色 */
+  --accent-green: #00ff88;
+  --accent-blue: #00d4ff;
+  --accent-red: #ff6b6b;
+
+  /* 文字颜色 */
+  --text-primary: #f0f6fc;
+  --text-secondary: #8b949e;
+  --text-muted: #6e7681;
+
+  /* 边框和阴影 */
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-highlight: rgba(0, 255, 136, 0.3);
+  --shadow-small: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-large: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  /* 圆角 */
+  --radius-small: 6px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+
+  /* 间距 */
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+
+  /* 动画 */
+  --transition-fast: all 0.2s ease-out;
+  --transition-normal: all 0.3s ease-out;
+  --transition-slow: all 0.5s ease-out;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #142843;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

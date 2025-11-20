@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import Header from "@/components/Header.vue";
+import Header from '@/components/Header.vue';
+import ArchitectureProcess from '@/components/ArchitectureProcess.vue';
+import TrainInformation from '@/components/TrainInformation.vue';
 </script>
 
 <template>
   <div class="main-container">
     <Header />
-    <div class="content-container"> 
-      <div class="architecture-process">
-
-      </div>
+    <div class="content-container">
+      <ArchitectureProcess />
+      <TrainInformation />
     </div>
   </div>
 </template>
@@ -30,5 +31,9 @@ import Header from "@/components/Header.vue";
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

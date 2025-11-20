@@ -11,8 +11,10 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    ArchitectureProcess: typeof import('./components/ArchitectureProcess.vue')['default']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     Header: typeof import('./components/Header.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    TrainInformation: typeof import('./components/TrainInformation.vue')['default']
   }
 }

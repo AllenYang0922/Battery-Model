@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
-const time = ref(new Date().toLocaleTimeString("zh-CN", { hour12: false }));
+const time = ref(new Date().toLocaleTimeString('zh-CN', { hour12: false }));
 let timer: number | undefined;
 onMounted(() => {
   timer = window.setInterval(() => {
-    time.value = new Date().toLocaleTimeString("zh-CN", { hour12: false });
+    time.value = new Date().toLocaleTimeString('zh-CN', { hour12: false });
   }, 1000);
 });
 onBeforeUnmount(() => {
@@ -36,8 +36,6 @@ onBeforeUnmount(() => {
       </div>
     </div>
   </div>
-  <div class="header-shadow" />
-  <div class="header-divider" />
 </template>
 
 <style scoped lang="scss">
@@ -56,7 +54,7 @@ onBeforeUnmount(() => {
 }
 
 .header::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -109,5 +107,4 @@ onBeforeUnmount(() => {
     }
   }
 }
-
 </style>

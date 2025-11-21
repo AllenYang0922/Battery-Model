@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import Header from '@/components/Header.vue';
-import ArchitectureProcess from '@/components/ArchitectureProcess.vue';
-import TrainInformation from '@/components/TrainInformation.vue';
+
+
 </script>
 
 <template>
   <div class="main-container">
     <Header />
-    <div class="content-container">
-      <ArchitectureProcess />
-      <TrainInformation />
-    </div>
+    <main>
+      <router-view></router-view>
+    </main>
+    
   </div>
 </template>
 

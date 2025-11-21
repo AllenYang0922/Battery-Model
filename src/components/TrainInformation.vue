@@ -264,16 +264,6 @@ onBeforeUnmount(() => {
 
 <style scoped lang="scss">
 .train-wrap {
-  margin-top: 48px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-medium);
-  padding: var(--spacing-md);
-  box-shadow: var(--shadow-medium);
-  backdrop-filter: blur(10px);
-  position: relative;
-  overflow: hidden;
-  transition: var(--transition-normal);
   .card-title {
     display: flex;
     align-items: center;

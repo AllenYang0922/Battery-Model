@@ -17,6 +17,9 @@ import {
   faSquare,
   faChartLine,
   faBrain,
+  faBatteryFull,
+  faGaugeHigh,
+  faChartPie,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -34,7 +37,10 @@ library.add(
   faEye,
   faSquare,
   faChartLine,
-  faBrain
+  faBrain,
+  faBatteryFull,
+  faGaugeHigh,
+  faChartPie
 );
 
 export function registerFontAwesome(app: App) {

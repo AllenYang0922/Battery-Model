@@ -26,12 +26,18 @@ dependencies:
   chart.js:
     specifier: ^4.4.5
     version: 4.5.1
+  echarts:
+    specifier: ^6.0.0
+    version: 6.0.0
   element-plus:
     specifier: ^2.11.8
     version: 2.11.8(vue@3.5.24)
   vue:
     specifier: ^3.5.24
     version: 3.5.24(typescript@5.9.3)
+  vue-router:
+    specifier: ^4.6.3
+    version: 4.6.3(vue@3.5.24)
 
 devDependencies:
   '@types/node':
@@ -891,6 +897,10 @@ packages:
       '@vue/compiler-dom': 3.5.24
       '@vue/shared': 3.5.24
 
+  /@vue/devtools-api@6.6.4:
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
+    dev: false
+
   /@vue/language-core@3.1.4(typescript@5.9.3):
     resolution: {integrity: sha512-n/58wm8SkmoxMWkUNUH/PwoovWe4hmdyPJU2ouldr3EPi1MLoS7iDN46je8CsP95SnVBs2axInzRglPNKvqMcg==}
     peerDependencies:
@@ -1051,6 +1061,13 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /echarts@6.0.0:
+    resolution: {integrity: sha512-Tte/grDQRiETQP4xz3iZWSvoHrkCQtwqd6hs+mifXcjrCuo2iKWbajFObuLJVBlDIJlOzgQPd1hsaKt/3+OMkQ==}
+    dependencies:
+      tslib: 2.3.0
+      zrender: 6.0.0
+    dev: false
 
   /element-plus@2.11.8(vue@3.5.24):
     resolution: {integrity: sha512-2wzSj2uubFU1f0t/gHkkE1d09mUgV18fSZX5excw3Ar6hyWcxph4E57U8dgYLDt7HwkKYv1BiqPyBdy0WqWlOA==}
@@ -1421,6 +1438,10 @@ packages:
     dev: true
     optional: true
 
+  /tslib@2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: false
+
   /typescript@5.9.3:
     resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
@@ -1621,6 +1642,15 @@ packages:
       vue: 3.5.24(typescript@5.9.3)
     dev: false
 
+  /vue-router@4.6.3(vue@3.5.24):
+    resolution: {integrity: sha512-ARBedLm9YlbvQomnmq91Os7ck6efydTSpRP3nuOKCvgJOHNrhRoJDSKtee8kcL1Vf7nz6U+PMBL+hTvR3bTVQg==}
+    peerDependencies:
+      vue: ^3.5.0
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      vue: 3.5.24(typescript@5.9.3)
+    dev: false
+
   /vue-tsc@3.1.4(typescript@5.9.3):
     resolution: {integrity: sha512-GsRJxttj4WkmXW/zDwYPGMJAN3np/4jTzoDFQTpTsI5Vg/JKMWamBwamlmLihgSVHO66y9P7GX+uoliYxeI4Hw==}
     hasBin: true
@@ -1650,3 +1680,9 @@ packages:
   /webpack-virtual-modules@0.6.2:
     resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
     dev: true
+
+  /zrender@6.0.0:
+    resolution: {integrity: sha512-41dFXEEXuJpNecuUQq6JlbybmnHaqqpGlbH1yxnA5V9MMP4SbohSVZsJIwz+zdjQXSSlR1Vc34EgH1zxyTDvhg==}
+    dependencies:
+      tslib: 2.3.0
+    dev: false

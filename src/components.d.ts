@@ -12,9 +12,14 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ArchitectureProcess: typeof import('./components/ArchitectureProcess.vue')['default']
+    BatteryData: typeof import('./components/BatteryData.vue')['default']
+    BatteryHealth: typeof import('./components/BatteryHealth.vue')['default']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     Header: typeof import('./components/Header.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    RingPieChart: typeof import('./components/RingPieChart.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     TrainInformation: typeof import('./components/TrainInformation.vue')['default']
   }
 }

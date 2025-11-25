@@ -20,6 +20,13 @@ import {
   faBatteryFull,
   faGaugeHigh,
   faChartPie,
+  faTemperatureFull,
+  faMaximize,
+  faDownload,
+  faChartBar,
+  faChartArea,
+  faSignal,
+  faExpand,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -40,7 +47,14 @@ library.add(
   faBrain,
   faBatteryFull,
   faGaugeHigh,
-  faChartPie
+  faChartPie,
+  faTemperatureFull,
+  faMaximize,
+  faDownload,
+  faChartBar,
+  faChartArea,
+  faSignal,
+  faExpand
 );
 
 export function registerFontAwesome(app: App) {

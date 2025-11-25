@@ -3,6 +3,9 @@ import ArchitectureProcess from '@/components/ArchitectureProcess.vue';
 import TrainInformation from '@/components/TrainInformation.vue';
 import BatteryHealth from '@/components/BatteryHealth.vue';
 import BatteryData from '@/components/BatteryData.vue';
+import SocAnalyze from '@/components/SocAnalyze.vue';
+import BatteryCurrent from '@/components/BatteryCurrent.vue';
+import AnalysisDashboard from '@/components/AnalysisDashboard.vue';
 </script>
 <template>
   <div class="content-container">
@@ -12,6 +15,11 @@ import BatteryData from '@/components/BatteryData.vue';
       <BatteryHealth />
     </div>
     <BatteryData />
+    <div class="battery-wrap">
+      <SocAnalyze />
+      <BatteryCurrent />
+    </div>
+    <AnalysisDashboard />
   </div>
 </template>
 
@@ -33,5 +41,10 @@ import BatteryData from '@/components/BatteryData.vue';
     overflow: hidden;
     transition: var(--transition-normal);
   }
+}
+.battery-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
 }
 </style>

@@ -11,7 +11,9 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AnalysisDashboard: typeof import('./components/AnalysisDashboard.vue')['default']
     ArchitectureProcess: typeof import('./components/ArchitectureProcess.vue')['default']
+    BatteryCurrent: typeof import('./components/BatteryCurrent.vue')['default']
     BatteryData: typeof import('./components/BatteryData.vue')['default']
     BatteryHealth: typeof import('./components/BatteryHealth.vue')['default']
     ElIcon: typeof import('element-plus/es')['ElIcon']
@@ -20,6 +22,8 @@ declare module 'vue' {
     RingPieChart: typeof import('./components/RingPieChart.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Soc: typeof import('./components/Soc.vue')['default']
+    SocAnalyze: typeof import('./components/SocAnalyze.vue')['default']
     TrainInformation: typeof import('./components/TrainInformation.vue')['default']
   }
 }

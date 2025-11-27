@@ -1,4 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import DvChart from './echarts/DvChart.vue';
+import { ref } from 'vue';
+
+const chartRef = ref(null);
+
+const handleDownload = () => {
+  if (chartRef.value) {
+    chartRef.value.downloadImage();
+  }
+};
+</script>
 <template>
   <div class="analysis-dashboard">
     <div class="dv-analysis">
@@ -15,17 +26,17 @@
         </div>
         <div class="metric">
           <div class="label">主峰位置</div>
-          <div class="value">
-            <span class="digit">3.78</span>V
-          </div>
+          <div class="value"><span class="digit">3.78</span>V</div>
         </div>
       </div>
-      <div class="chart-wrap"></div>
+      <div class="chart-wrap">
+        <DvChart ref="chartRef"></DvChart>
+      </div>
       <div class="operation">
         <div class="icon">
           <font-awesome-icon icon="fa-solid fa-expand" style="color: #8b949e" />
         </div>
-        <div class="icon">
+        <div class="icon" @click="handleDownload">
           <font-awesome-icon
             icon="fa-solid fa-download"
             style="color: #8b949e"
@@ -239,6 +250,7 @@
         border-radius: var(--radius-small);
         padding: 6px;
         border: 1px solid var(--border-color);
+        cursor: pointer;
       }
     }
   }

@@ -16,6 +16,8 @@ declare module 'vue' {
     BatteryCurrent: typeof import('./components/BatteryCurrent.vue')['default']
     BatteryData: typeof import('./components/BatteryData.vue')['default']
     BatteryHealth: typeof import('./components/BatteryHealth.vue')['default']
+    DQDVChart: typeof import('./components/echarts/DQDVChart.vue')['default']
+    DvChart: typeof import('./components/echarts/DvChart.vue')['default']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     Header: typeof import('./components/Header.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
@@ -24,6 +26,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     Soc: typeof import('./components/Soc.vue')['default']
     SocAnalyze: typeof import('./components/SocAnalyze.vue')['default']
+    Test: typeof import('./components/echarts/test.vue')['default']
     TrainInformation: typeof import('./components/TrainInformation.vue')['default']
   }
 }
